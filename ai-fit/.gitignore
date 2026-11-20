@@ -1,0 +1,14 @@
+.vendor/
+.localdeps/
+.venv/
+.gpu-runtime/
+.runtime-deps/
+.download-deps/
+.external/
+.models/
+instance/
+__pycache__/
+*.pyc
+.env
+models/*.joblib
+*.service-account.json

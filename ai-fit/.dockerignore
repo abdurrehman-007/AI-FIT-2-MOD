@@ -1,0 +1,7 @@
+.vendor
+.localdeps
+.venv
+instance
+__pycache__
+.env
+.git

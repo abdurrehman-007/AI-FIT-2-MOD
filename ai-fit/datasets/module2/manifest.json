@@ -1,0 +1,42 @@
+{
+  "retrieved": "2026-09-10",
+  "purpose": "Pakistan-relevant anthropometry context; not supervised fitting training",
+  "datasets": [
+    {
+      "file": "pone.0317534.s001.xlsx",
+      "source": "https://plos.figshare.com/articles/dataset/S1_File_-_Effectiveness_of_a_school-based_physical_activity_intervention_on_overweight_and_obesity_among_children_and_adolescents_in_Pakistan/28475215",
+      "download": "https://ndownloader.figshare.com/files/52573738",
+      "authors": [
+        "Moazzam Tanveer",
+        "Ejaz Asghar",
+        "Georgian Badicu",
+        "Alexios Batrakoulis",
+        "Umar Tanveer",
+        "Serge Brand",
+        "Matheus Santos de Sousa Fernandes",
+        "Luca Paolo Ardig\u00f2"
+      ],
+      "license": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "modified": false,
+      "fit_labels": false,
+      "sha256": "27296591c4e0d792bee4a111f3ceb7a587c2af47e8575a7b1c729ce6901f817d"
+    },
+    {
+      "file": "national-anthropometry.csv",
+      "source": "https://opendata.com.pk/dataset/pakistan-demographic-and-health-data/resource/e647ddde-5ff8-4698-b208-408f87665ebf",
+      "attribution": "Open Data Pakistan / The DHS Program",
+      "license": {
+        "name": "Creative Commons Attribution",
+        "version": "not specified by resource",
+        "url": "https://opendefinition.org/licenses/cc-by/"
+      },
+      "modified": false,
+      "fit_labels": false,
+      "sha256": "b6a5869098337f1d79388f73f4254b125ada0917436d1afeeb4c93b429f2811a"
+    }
+  ]
+}

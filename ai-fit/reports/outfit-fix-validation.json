@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-24",
+  "tests": {
+    "application_sizing_analytics": 50,
+    "gpu_preprocessing": 37,
+    "total_python": 87,
+    "status": "passed",
+    "generation_state_javascript": "passed"
+  },
+  "real_gpu": [
+    {
+      "case": "pink-brown",
+      "status": 200,
+      "seconds": 17.11
+    },
+    {
+      "case": "pink-blue",
+      "status": 200,
+      "seconds": 16.25
+    }
+  ],
+  "visual_review": {
+    "completed": true,
+    "improved": [
+      "Pink trousers replaced with outfit-coloured trousers in both exact-case outputs",
+      "Hands remain together in front",
+      "Missed garment edges reduced"
+    ],
+    "remaining": [
+      "Product embroidery, drape, cut and exact colour differ",
+      "Small ankle/cuff and footwear-boundary artifacts remain; pixel-perfect footwear is not established"
+    ],
+    "acceptance": "Partial visual improvement; not exact full-outfit reconstruction or a universal quality guarantee"
+  },
+  "unchanged": [
+    "DeCo model weights and backend",
+    "Module 2 and 3 implementation",
+    "Original input/product photos and inventory"
+  ],
+  "private_comparison": "work/outfit-fix/comparison.jpg (excluded from portable archives)"
+}

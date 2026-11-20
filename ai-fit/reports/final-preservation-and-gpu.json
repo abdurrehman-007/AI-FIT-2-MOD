@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-23",
+  "snapshot_files": 206,
+  "unchanged_files": 204,
+  "gpu_python_files_unchanged": true,
+  "existing_photo_files_unchanged": true,
+  "runtime_files_changed": [
+    "instance\\aifit.sqlite3",
+    "instance\\gpu-error.log"
+  ],
+  "runtime_note": "Live database and GPU log changed during the audit. Read-only database integrity check passed; no test fixture accounts/stores/products/events found. Three recent successful try-on events were present. No rollback or bulk user-data migration performed; byte-for-byte database preservation is not claimed.",
+  "gpu_smoke": {
+    "backend": "DeCo-VTON",
+    "upper_blue": {
+      "http": 200,
+      "seconds": 15.6
+    },
+    "upper_black": {
+      "http": 200,
+      "seconds": 15.4
+    },
+    "internal_resolution": [
+      384,
+      512
+    ],
+    "steps": 50,
+    "quality": "Visually reviewed: target blue/black colours present; exact details/fit not guaranteed."
+  },
+  "unverified": [
+    "Successful lower/full-outfit generation visual quality",
+    "Native OS share sheet on a physical phone",
+    "Firebase cloud deployment",
+    "Real RF/KNN fitting accuracy and calibrated confidence without suitable independent labels"
+  ]
+}

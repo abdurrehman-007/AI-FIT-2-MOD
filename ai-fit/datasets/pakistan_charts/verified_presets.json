@@ -1,0 +1,66 @@
+[
+  {
+    "id": "eshalpreet-womenswear",
+    "name": "EshalPreet general womenswear body reference",
+    "source_url": "https://eshalpreet.com/pages/size-guide",
+    "verified_on": "2026-09-23",
+    "units": "in",
+    "basis": "body circumference",
+    "population": "Pakistani womenswear; general size targets, not product-specific fit validation",
+    "limitations": "Not a national standard or a menswear chart. Design ease varies. Retailer must confirm suitability before saving. No physical fitting labels or accuracy evidence.",
+    "charts": {
+      "upper": {
+        "XS": {
+          "chest": 32,
+          "waist": 26
+        },
+        "S": {
+          "chest": 34,
+          "waist": 28
+        },
+        "M": {
+          "chest": 36,
+          "waist": 30
+        },
+        "L": {
+          "chest": 39,
+          "waist": 33
+        },
+        "XL": {
+          "chest": 42,
+          "waist": 36
+        },
+        "XXL": {
+          "chest": 45,
+          "waist": 39
+        }
+      },
+      "lower": {
+        "XS": {
+          "waist": 26,
+          "hips": 35
+        },
+        "S": {
+          "waist": 28,
+          "hips": 37
+        },
+        "M": {
+          "waist": 30,
+          "hips": 39
+        },
+        "L": {
+          "waist": 33,
+          "hips": 42
+        },
+        "XL": {
+          "waist": 36,
+          "hips": 45
+        },
+        "XXL": {
+          "waist": 39,
+          "hips": 48
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+  "results": [
+    {
+      "command": [
+        "E:\\Comsats\\8th Semester\\Fyp 2\\Virtual-Try-On-main\\.venv\\Scripts\\python.exe",
+        "-B",
+        "test_app.py"
+      ],
+      "returncode": 0,
+      "output": "test_csrf_and_access (__main__.ApplicationTests.test_csrf_and_access) ... ok\ntest_csv_atomic_validation_and_import (__main__.ApplicationTests.test_csv_atomic_validation_and_import) ... ok\ntest_csv_upsert_preserves_product_photo (__main__.ApplicationTests.test_csv_upsert_preserves_product_photo) ... ok\ntest_disabled_inference_is_explicit (__main__.ApplicationTests.test_disabled_inference_is_explicit) ... ok\ntest_inference_contract_and_analytics (__main__.ApplicationTests.test_inference_contract_and_analytics) ... ok\ntest_inference_failure_not_counted_as_success (__main__.ApplicationTests.test_inference_failure_not_counted_as_success) ... ok\ntest_invalid_image (__main__.ApplicationTests.test_invalid_image) ... ok\ntest_inventory_isolation (__main__.ApplicationTests.test_inventory_isolation) ... ok\ntest_pages_and_assets (__main__.ApplicationTests.test_pages_and_assets) ... ok\ntest_photo_privacy_delete_expiry (__main__.ApplicationTests.test_photo_privacy_delete_expiry) ... ok\ntest_restart_persistence (__main__.ApplicationTests.test_restart_persistence) ... ok\ntest_signup_login_logout (__main__.ApplicationTests.test_signup_login_logout) ... ok\ntest_sizing_and_no_measurement_retention (__main__.ApplicationTests.test_sizing_and_no_measurement_retention) ... ok\ntest_store_chart_validation (__main__.ApplicationTests.test_store_chart_validation) ... ok\ntest_training_requires_independent_label_provenance (__main__.ApplicationTests.test_training_requires_independent_label_provenance) ... ok\ntest_transparent_upload_roundtrip (__main__.ApplicationTests.test_transparent_upload_roundtrip) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 5.916s\n\nOK\n"
+    },
+    {
+      "command": [
+        "E:\\Comsats\\8th Semester\\Fyp 2\\Virtual-Try-On-main\\.venv\\Scripts\\python.exe",
+        "-B",
+        "test_sizing.py"
+      ],
+      "returncode": 0,
+      "output": "test_all_categories_and_private_measurements (__main__.CategoryApiTests.test_all_categories_and_private_measurements) ... ok\ntest_chart_update_persistence_and_isolation (__main__.CategoryApiTests.test_chart_update_persistence_and_isolation) ... ok\ntest_invalid_chart_units (__main__.CategoryApiTests.test_invalid_chart_units) ... ok\ntest_legacy_store_migrates_on_read_only (__main__.CategoryApiTests.test_legacy_store_migrates_on_read_only) ... ok\ntest_category_required_inputs (__main__.SizingTests.test_category_required_inputs) ... ok\ntest_chart_validation_atomic_and_monotonic (__main__.SizingTests.test_chart_validation_atomic_and_monotonic) ... ok\ntest_height_conversion_and_weight (__main__.SizingTests.test_height_conversion_and_weight) ... ok\ntest_invalid_units_feet_inches_and_values (__main__.SizingTests.test_invalid_units_feet_inches_and_values) ... ok\ntest_legacy_conversion_preserves_source (__main__.SizingTests.test_legacy_conversion_preserves_source) ... ok\ntest_only_available_sizes_and_no_model_confidence (__main__.SizingTests.test_only_available_sizes_and_no_model_confidence) ... ok\ntest_optional_length_required_when_chart_includes_it (__main__.SizingTests.test_optional_length_required_when_chart_includes_it) ... ok\ntest_outside_chart_does_not_claim_perfect_fit (__main__.SizingTests.test_outside_chart_does_not_claim_perfect_fit) ... ok\ntest_probability_metrics_known_answers (__main__.SizingTests.test_probability_metrics_known_answers) ... ok\ntest_synthetic_provenance_rejected (__main__.SizingTests.test_synthetic_provenance_rejected) ... ok\ntest_upper_ignores_hips_lower_ignores_chest (__main__.SizingTests.test_upper_ignores_hips_lower_ignores_chest) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.746s\n\nOK\n"
+    },
+    {
+      "command": [
+        "E:\\Comsats\\8th Semester\\Fyp 2\\Virtual-Try-On-main\\.venv\\Scripts\\python.exe",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "gpu_service",
+        "-p",
+        "test_*.py"
+      ],
+      "returncode": 0,
+      "output": "weights: downloaded and verified\nweights: downloaded and verified\n......................\n----------------------------------------------------------------------\nRan 22 tests in 2.778s\n\nOK\n"
+    },
+    {
+      "command": [
+        "C:/Users/Night-Fury/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+        "--check",
+        "static/app.js"
+      ],
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "C:/Users/Night-Fury/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+        "test_catalog.cjs"
+      ],
+      "returncode": 0,
+      "output": "PASS: owner catalog, guest catalog, explicit store links, login and invalid-store fallback.\n"
+    },
+    {
+      "command": [
+        "C:/Users/Night-Fury/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+        "test_generate.cjs"
+      ],
+      "returncode": 0,
+      "output": "PASS: valid result retained; stale garment, photo and account results rejected.\n"
+    },
+    {
+      "command": [
+        "C:/Users/Night-Fury/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node.exe",
+        "test_module2_ui.cjs"
+      ],
+      "returncode": 0,
+      "output": "PASS: three category forms/results, mobile overflow, chart editor persistence and zero JS errors.\n"
+    }
+  ],
+  "syntax": "passed"
+}

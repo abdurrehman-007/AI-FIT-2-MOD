@@ -1,0 +1,9 @@
+{
+  "checked_files": 286,
+  "missing_files": [],
+  "changed_existing_files": [
+    "instance\\aifit.sqlite3",
+    "instance\\gpu-error.log"
+  ],
+  "note": "Live application may update its own logs/database; experiment used test_client on GPU service and did not write catalogue/accounts."
+}

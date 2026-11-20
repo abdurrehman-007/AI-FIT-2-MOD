@@ -1,0 +1,17 @@
+[
+  {
+    "path": "C:\\Users\\Night-Fury\\Documents\\Codex\\2026-09-09\\build-x20\\outputs\\ai-fit\\deliverables\\AI-FIT-Module2-source.zip",
+    "reason": "SHA-256 identical to canonical ZIP",
+    "bytes": 1139274
+  },
+  {
+    "path": "C:\\Users\\Night-Fury\\Documents\\Codex\\2026-09-09\\build-x20\\outputs\\ai-fit\\deliverables\\AI-FIT-Module2-datasets.zip",
+    "reason": "SHA-256 identical to canonical ZIP",
+    "bytes": 362095
+  },
+  {
+    "path": "C:\\Users\\Night-Fury\\Documents\\Codex\\2026-09-09\\build-x20\\outputs\\ai-fit\\__pycache__",
+    "reason": "Regenerable Python bytecode only",
+    "files": 4
+  }
+]

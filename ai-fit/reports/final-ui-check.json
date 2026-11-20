@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "categories": [
+    "upper",
+    "lower",
+    "overall"
+  ],
+  "mobile_width": 390,
+  "chart_edit_persisted": true,
+  "verified_reference_opt_in": true,
+  "upload_generate_download": true,
+  "gpu_in_browser": "mocked",
+  "share_api": "stubbed supported and unsupported branches; native OS sheet not tested",
+  "analytics_sales_returns": true,
+  "kiosk_sign_out_and_sign_in": true,
+  "browser_errors": []
+}

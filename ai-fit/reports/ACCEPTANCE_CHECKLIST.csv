@@ -1,0 +1,9 @@
+case,expected,verification,status
+Upper and Lower sizing,Relevant fields only; inches feet/inches kg,Browser automated,passed
+Retailer isolation,No cross-store reads or writes,Python automated,passed
+Upload generate save,Valid images accepted and downloadable,Browser mock GPU,passed
+Share,Supported and unsupported branches,Browser stub,passed; native sheet unverified
+Full outfits,Pose and garment identity retained,Real image review,partial; fidelity issues remain
+Real fittings,Useful size on representative actual users,Independent human trials,pending
+Kiosk handover,Prior photos/session cleared on shared device,Physical tablet test,pending
+Model confidence,Unavailable without valid evaluation,Python/browser automated,passed

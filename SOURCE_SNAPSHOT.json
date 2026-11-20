@@ -1,0 +1,856 @@
+{
+  "date": "2026-11-20",
+  "title": "AI-FIT (2-MOD)",
+  "files": {
+    ".devcontainer/devcontainer.json": {
+      "bytes": 1062,
+      "sha256": "f810f9ba6b2732feaeba9b38f7f03317c83f3e6f6845581f95b49dffddb6b10b"
+    },
+    ".dockerignore": {
+      "bytes": 56,
+      "sha256": "58fd0dd01541ebea8a016c7319a19ca7b9ef7dedd331949d17a39f7854a43d4d"
+    },
+    ".env.example": {
+      "bytes": 658,
+      "sha256": "0c419769455583fdaca52c6f4e094af66ade0a6c1f89ddd02c3f843e17be9112"
+    },
+    ".gitignore": {
+      "bytes": 399,
+      "sha256": "f4cd266e467f0422018e2aff4c4f6c99adc0b9e71949a5aac7d58c063f43b7e2"
+    },
+    "AI-FIT-Feature-Schema.html": {
+      "bytes": 7334,
+      "sha256": "ea0e1920d3f0d4c76fe6dce3290defe05c5bd3d2c6ef5562174c96df62c42bc2"
+    },
+    "AI-FIT-Feature-Schema.md": {
+      "bytes": 3223,
+      "sha256": "bdcdaedb52ec4341040b3a4e1bbc35e5749df70f0daef588ada7e1b63bcaaff6"
+    },
+    "Dockerfile": {
+      "bytes": 337,
+      "sha256": "97cc1e8a21fdfdc0ca14028ea7f6f8e77923e53b6adb93f9691d835911ebcc78"
+    },
+    "Export-Database-Schema.bat": {
+      "bytes": 171,
+      "sha256": "3fbb0cdc2535ee84a534cb1635d8202448f6d2c1726a409afdd2b7504e3280f5"
+    },
+    "Open-AI-FIT.cmd": {
+      "bytes": 111,
+      "sha256": "2a3fb2f04a249af434e36c2c732ca79b1d51bf5e30a4dfdd78e84a1efa68ecaf"
+    },
+    "Open-Feature-Schema.bat": {
+      "bytes": 179,
+      "sha256": "1be00218d585405b6b9eb98a0c54fa1c3061ad4b536e634a9e03c47b65346505"
+    },
+    "README.md": {
+      "bytes": 26777,
+      "sha256": "eb1b73e437bc4b8e76ff9de454b0f2834b2a7de7757331aec69f7ce7e4a8596f",
+      "original_source_sha256": "b7c9ce16107d1a39d563bd6e25361d9d61d41484a76463a7e6989266d38dc461"
+    },
+    "ai-fit/.dockerignore": {
+      "bytes": 56,
+      "sha256": "58fd0dd01541ebea8a016c7319a19ca7b9ef7dedd331949d17a39f7854a43d4d"
+    },
+    "ai-fit/.env.example": {
+      "bytes": 980,
+      "sha256": "d99ecfbe0f1f42db1d91232f943760c8652c5c266176935d97ccdf11731cd6ed"
+    },
+    "ai-fit/.gitignore": {
+      "bytes": 166,
+      "sha256": "63009422c19c9a29d628f4b83c06d47e8301f94431cf4c3f210d38fc216794b4"
+    },
+    "ai-fit/AI-FIT_Database_Schema.sql": {
+      "bytes": 129,
+      "sha256": "1bf12e597913454924104364229fc1cafb5954b5cd2f7692b0940827c270ad80"
+    },
+    "ai-fit/Dockerfile": {
+      "bytes": 337,
+      "sha256": "97cc1e8a21fdfdc0ca14028ea7f6f8e77923e53b6adb93f9691d835911ebcc78"
+    },
+    "ai-fit/Export-Database-Schema.bat": {
+      "bytes": 934,
+      "sha256": "88474ff1e087e2672ede50a7102f21661d8992e75c82b16dc30d92fc2d414d26"
+    },
+    "ai-fit/Open-AI-FIT.cmd": {
+      "bytes": 97,
+      "sha256": "65378398a8b2e59ea031d522e5f93a0ef895fa9f57afdf42a5d2c7cc7436725a"
+    },
+    "ai-fit/README.md": {
+      "bytes": 25947,
+      "sha256": "872e443a7ad46173f8b4d74ca74d52bb09255e8db877d87e41949b1304e110a9"
+    },
+    "ai-fit/analytics.py": {
+      "bytes": 4435,
+      "sha256": "b6a235ca26ad85a00050a7dd301012768bb4d79515a0276feb07aebd64971805"
+    },
+    "ai-fit/app.py": {
+      "bytes": 36170,
+      "sha256": "4d656fc9c0168a8cea4d12211c53d62fb30d8e7c70e06a0b93a6a07ca60078ca"
+    },
+    "ai-fit/datasets/module2/SOURCES_AND_LICENCES.md": {
+      "bytes": 5668,
+      "sha256": "00bd0342005caff61669607d977b3b6485a575e685e66e9fa553330c19b204f0"
+    },
+    "ai-fit/datasets/module2/manifest.json": {
+      "bytes": 1622,
+      "sha256": "b9fec1a566736e3f3d21cbe4d59b6c23a741a198f1e1ff09d59fe34e1f305b8e"
+    },
+    "ai-fit/datasets/module2/mendeley-metadata.json": {
+      "bytes": 5062,
+      "sha256": "411057dc9003f57ac436c4b609300b9d1936edbcc2453094a734f9e0c6a3a198"
+    },
+    "ai-fit/datasets/module2/national-anthropometry.csv": {
+      "bytes": 11202,
+      "sha256": "b6a5869098337f1d79388f73f4254b125ada0917436d1afeeb4c93b429f2811a"
+    },
+    "ai-fit/datasets/module2/pakistan-school-metadata.json": {
+      "bytes": 7827,
+      "sha256": "a8719e0c6e2bba9f7d9853bdd3664d9371a13c6dddb020aa6c266aa1cdd0c853"
+    },
+    "ai-fit/datasets/module2/pone.0317534.s001.xlsx": {
+      "bytes": 264013,
+      "sha256": "27296591c4e0d792bee4a111f3ceb7a587c2af47e8575a7b1c729ce6901f817d"
+    },
+    "ai-fit/datasets/module2/provenance.example.json": {
+      "bytes": 232,
+      "sha256": "8f296cab059e793262878e78e0429f41bcc5d390e4ba67537cab6bcf5f070057"
+    },
+    "ai-fit/datasets/pakistan_charts/DATA_AUDIT.md": {
+      "bytes": 8866,
+      "sha256": "41a7fa573a8d6f3b546d2c71e324ab3c1b21f7a0b996b7a0bc005c13a4801794"
+    },
+    "ai-fit/datasets/pakistan_charts/FITTING_DATA_REVIEW_2026-09-29.json": {
+      "bytes": 772,
+      "sha256": "53f768145ce579cc410b67f0f4df78ca63139bd237194cdb383a618e137cfe30"
+    },
+    "ai-fit/datasets/pakistan_charts/SOURCE_EVIDENCE.json": {
+      "bytes": 761,
+      "sha256": "321b2f007b398cf0c5464fdcf7fb69a55974e143d737ad7f76a24a044cba94fa"
+    },
+    "ai-fit/datasets/pakistan_charts/fitting_collection/README.md": {
+      "bytes": 1999,
+      "sha256": "b8e4bfcab1c6ce0307f6850b9b806a05a2a9008c7b0117401700ef44d91b1daf"
+    },
+    "ai-fit/datasets/pakistan_charts/fitting_collection/lower_provenance_template.json": {
+      "bytes": 228,
+      "sha256": "c6765dc6a1677dd3f8529f91ce033d9c2572508e574d9a33df7e8ba4ad714b72"
+    },
+    "ai-fit/datasets/pakistan_charts/fitting_collection/lower_template.csv": {
+      "bytes": 99,
+      "sha256": "9b8fb25bbd228de0f1fa9132cfbba4c4fc7b7d2aadaaf258cdf9dda8a79aa68a"
+    },
+    "ai-fit/datasets/pakistan_charts/fitting_collection/upper_provenance_template.json": {
+      "bytes": 228,
+      "sha256": "735358bc84a732cf5aaa5cf9ad82f0e5885d40f65298541e6e061cd5631a2665"
+    },
+    "ai-fit/datasets/pakistan_charts/fitting_collection/upper_template.csv": {
+      "bytes": 100,
+      "sha256": "25e62427dfb16d948b5832c3930c71330effd93e99f58bd5976aa0effd8e9f5d"
+    },
+    "ai-fit/datasets/pakistan_charts/lower_charts.csv": {
+      "bytes": 238,
+      "sha256": "7fb28608c4b59b60539705cbc05726f312004d45ce90d532a9c45e7b114a520c"
+    },
+    "ai-fit/datasets/pakistan_charts/sapphire_lower_pull_on_trousers.html": {
+      "bytes": 190419,
+      "sha256": "fcf31cb9b389748cdbbac5f4831fddb1d97b2c2852827cf1e46c8daf0f8d810a"
+    },
+    "ai-fit/datasets/pakistan_charts/sapphire_lower_straight_trousers.html": {
+      "bytes": 190276,
+      "sha256": "28b7239df1eeedfaa99b2ed6393429296a7e2a55692efa1c0e218c5089c0d31e"
+    },
+    "ai-fit/datasets/pakistan_charts/sapphire_upper_waistcoat.html": {
+      "bytes": 182652,
+      "sha256": "37e504e88925576d4bde9d20162b97965a908757464df1adff50c99db2668d52"
+    },
+    "ai-fit/datasets/pakistan_charts/sources.csv": {
+      "bytes": 370,
+      "sha256": "6019c5a41ec08eb5a5f3fa764a980575f1ba4782c0adce998269fa1faa4a4286"
+    },
+    "ai-fit/datasets/pakistan_charts/sources_current.csv": {
+      "bytes": 689,
+      "sha256": "058b191b6e92fc7649b6b5c54284d8b48333ff7ab843296429f76031ca7dbd22"
+    },
+    "ai-fit/datasets/pakistan_charts/upper_charts.csv": {
+      "bytes": 7534,
+      "sha256": "56deb6b4a8c417b7e89f7e7c4cdef251faf0ca48caebd942a887fe095e913a96"
+    },
+    "ai-fit/datasets/pakistan_charts/verified_lower_charts.csv": {
+      "bytes": 1340,
+      "sha256": "6b8c5b738c664fe66a06a241e2360eab52411df8711f823c584d3a73d75e8235"
+    },
+    "ai-fit/datasets/pakistan_charts/verified_presets.json": {
+      "bytes": 1530,
+      "sha256": "ae47f0bddcdaec534fc348cda01455d7de4682ff3834045c6e0c84431a2cf61d"
+    },
+    "ai-fit/datasets/pakistan_charts/verified_upper_charts.csv": {
+      "bytes": 1345,
+      "sha256": "d95a478c6ab9b64c8b49104c81abec27d9130f352a16435a6b41cbfa02381f95"
+    },
+    "ai-fit/gpu_service/LOCAL_MODELS.md": {
+      "bytes": 9704,
+      "sha256": "d01ba149bcf8761dd0fe9e4abe9a2217fbd5d0186d70155beafeb7234f4dad87"
+    },
+    "ai-fit/gpu_service/clothing_mask.py": {
+      "bytes": 48907,
+      "sha256": "a72d0df2c0309290e25f0e7cd144dd789810c32632eafe07f11db73977a8bcca"
+    },
+    "ai-fit/gpu_service/deco_backend.py": {
+      "bytes": 5292,
+      "sha256": "50184f908c20b6421380a5b2530a45cc16376b83aef7537b5bad78e776076fe9"
+    },
+    "ai-fit/gpu_service/download_deco.py": {
+      "bytes": 2624,
+      "sha256": "a63c2093d6b3ad8d754e5139ff1197f16ae432e9089082eec1d5b409cc8d52ef"
+    },
+    "ai-fit/gpu_service/fashn_backend.py": {
+      "bytes": 7163,
+      "sha256": "f26f17f0148c2a9196f60f52217db06970361334fd7f317ca6e7d3e0f335cff8"
+    },
+    "ai-fit/gpu_service/fast_attention.py": {
+      "bytes": 2024,
+      "sha256": "73b0da35f0e61ba2f3780b5a63b306edeccbfa80f8a4fc1adbc757cfdb01106f"
+    },
+    "ai-fit/gpu_service/local_windows.py": {
+      "bytes": 30809,
+      "sha256": "e6305d1e4d1c0b10941e3167137f2953cee205703e31792f4606e2c3d324a79c"
+    },
+    "ai-fit/gpu_service/pose_geometry.py": {
+      "bytes": 14628,
+      "sha256": "187a102640af0542d20d5e212b95de5bf78be7b911b1c02896560656a0950ea5"
+    },
+    "ai-fit/gpu_service/preprocessing.py": {
+      "bytes": 9365,
+      "sha256": "9734ab616889cf5d9e9b41f115418e2d1abd82ee65f2132c761a91f1f685115b"
+    },
+    "ai-fit/gpu_service/progress.py": {
+      "bytes": 3439,
+      "sha256": "dd051a77f3614efd38270ddb30d6358567429de147161f26521262ce4c3e7f0b"
+    },
+    "ai-fit/gpu_service/runtime_fingerprint.py": {
+      "bytes": 885,
+      "sha256": "ddfaf81999c4f1c0cdcd6255cfa353f15e76d04f64ca9dcab2eb67fc0e5009bd"
+    },
+    "ai-fit/gpu_service/server.py": {
+      "bytes": 4525,
+      "sha256": "fd9a7ee95f9924ddf097af396a6f33d505282f3f86eebbe338c632f4101fc972"
+    },
+    "ai-fit/gpu_service/setup_fashn.py": {
+      "bytes": 4648,
+      "sha256": "03333283102c500ce8b527fe7c96494fc7ca35b5a9b09ca54d5a672b2043a070"
+    },
+    "ai-fit/gpu_service/setup_preprocessing.py": {
+      "bytes": 1417,
+      "sha256": "78f0b88942dc8621c6a7a775048e34804fe67dd1c025f8620d860597a14fee93"
+    },
+    "ai-fit/gpu_service/test_clothing_mask.py": {
+      "bytes": 46679,
+      "sha256": "a2cf9c49ba17b2cf914bc82310f7a39a17c304a321297d6c4d91a10c396a92fc"
+    },
+    "ai-fit/gpu_service/test_deco_backend.py": {
+      "bytes": 2805,
+      "sha256": "38c27fbde92fd4bfb72086ea88783aaa64dadcf725a7f6777231f83825bcddf8"
+    },
+    "ai-fit/gpu_service/test_download_deco.py": {
+      "bytes": 2981,
+      "sha256": "497b79ea563ca377ddd0cad0ad8c25b08db5aa9fc506dc3b9d6fff06104ae104"
+    },
+    "ai-fit/gpu_service/test_fashn_backend.py": {
+      "bytes": 5551,
+      "sha256": "0d34606d044ed2dd5e0e70d454a6d4acfc27d228c1f22086e66cb56488bebaa8"
+    },
+    "ai-fit/gpu_service/test_fast_attention.py": {
+      "bytes": 1662,
+      "sha256": "948e7508a138434ae67cba6c57ad577aeacb1afd4dda1587fc92097f1f560372"
+    },
+    "ai-fit/gpu_service/test_local_windows.py": {
+      "bytes": 27466,
+      "sha256": "3214a3949bdf835d65e9370adf721fa1706a1f93dbcedbb200db1f987a24d8b7"
+    },
+    "ai-fit/gpu_service/test_pose_geometry.py": {
+      "bytes": 8962,
+      "sha256": "dd75dfb6ee732f623a1c01e722195ea7f8a1cbb81c1141898f9fb5f208f00e9d"
+    },
+    "ai-fit/gpu_service/test_preprocessing.py": {
+      "bytes": 6560,
+      "sha256": "f092da6223c26bcdc806dcedf3f9fb6fb652df641d12d0e42586672644b59a43"
+    },
+    "ai-fit/gpu_service/test_progress.py": {
+      "bytes": 1691,
+      "sha256": "fd981e89714c501ea9cbc0d01367350e220d2a93ade1f69e27a38386573cf6c8"
+    },
+    "ai-fit/gpu_service/test_runtime_fingerprint.py": {
+      "bytes": 1721,
+      "sha256": "455af442ad70aa687ca1cc21da7f2484857bb10512036a487e4ad4297790e777"
+    },
+    "ai-fit/gpu_service/vendor/DECO-VTON-LICENSE": {
+      "bytes": 21286,
+      "sha256": "047d2259741a3ebb30d8c8a43d4ba79b5b229a069acd1d2bea49f22b297d8e98"
+    },
+    "ai-fit/gpu_service/vendor/NOTICE.md": {
+      "bytes": 363,
+      "sha256": "6f1c84a4632fb1a2e62558e269a335a807bcb09678b7390f69b8b9a1017c750e"
+    },
+    "ai-fit/gpu_service/vendor/decovton/__init__.py": {
+      "bytes": 503,
+      "sha256": "a4c109777556621daa92f78d123a49152f882210ac4044e4919e8774566cd96f"
+    },
+    "ai-fit/gpu_service/vendor/decovton/attn_processor.py": {
+      "bytes": 4530,
+      "sha256": "60a1807abfba9cf299c78f9b73c79a0cb894b10580f9ccb70d6499f96691b650"
+    },
+    "ai-fit/gpu_service/vendor/decovton/pipeline.py": {
+      "bytes": 16577,
+      "sha256": "e94db93cc65df4a21fc11a2f8d42aa8e60ee89d01b88c6d25b309d0ce310251a"
+    },
+    "ai-fit/gpu_service/vendor/decovton/presets.py": {
+      "bytes": 1550,
+      "sha256": "bfbefe6095fcbf55fce5f0d3072e6bec7cd836edb8703f5235b30b0e46d117fb"
+    },
+    "ai-fit/gpu_service/vendor/decovton/utils.py": {
+      "bytes": 2254,
+      "sha256": "c1b823e2b03611aa4cc22bbe459b1edccbab3304743c5f1c55cb592c500168a7"
+    },
+    "ai-fit/reports/ACCEPTANCE_CHECKLIST.csv": {
+      "bytes": 743,
+      "sha256": "4d2321433a5a569eff4e4dc9d3bf3669d42058521ea4e8637d5a445021e0ff3d"
+    },
+    "ai-fit/reports/ANALYTICS_UPDATE.md": {
+      "bytes": 1703,
+      "sha256": "3cb0b9e7d348fd3c93a7ae85408315f52f15374400b423370c3f7ce235e158e0"
+    },
+    "ai-fit/reports/DESIGN_AND_BODY_CHECKS_2026-11-17.md": {
+      "bytes": 2652,
+      "sha256": "8cf9d12455ce53c2dc35939b1f77285adbe5e104253365969a1578d20a58aaba"
+    },
+    "ai-fit/reports/DUAL_MODEL_SPEED_2026-11-20.md": {
+      "bytes": 7951,
+      "sha256": "c1da4128adb3bf2ae98d4de91dbd502642a56a80206d8702589ae578fb1eefc5"
+    },
+    "ai-fit/reports/FINAL_DELIVERY.md": {
+      "bytes": 8585,
+      "sha256": "d0e5661d3cc0cd2084086a44a582196537d4a18db613827ab328b91477dbe4fc"
+    },
+    "ai-fit/reports/FULL_UPPER_AUDIT_2026-11-18.md": {
+      "bytes": 4189,
+      "sha256": "cdd19af843336278857bc11ffea8d476d8916efa4db32a14f5444e4b877e389b"
+    },
+    "ai-fit/reports/LOCAL_START_2026-11-13.md": {
+      "bytes": 1592,
+      "sha256": "4caf984e2f7dc88734bf86a4dffee03de78caa56813da8093f30d3567b351ef3"
+    },
+    "ai-fit/reports/MODULE2_EVALUATION.md": {
+      "bytes": 14242,
+      "sha256": "ceb0f0ec6ced8ab63c39aec5c62e4d18542bdd3ed9579a1b4832da38ed50d7f5"
+    },
+    "ai-fit/reports/NECK_AND_CUFF_FIX_2026-11-18.md": {
+      "bytes": 2311,
+      "sha256": "1ef671f63e15e8ef11c258c8e918bf560facc71dd74edb54446ac42871f19e7c"
+    },
+    "ai-fit/reports/OUTFIT_FIX.md": {
+      "bytes": 3893,
+      "sha256": "b6ef1ac07c43893c250118f3de9fe40856648b184b0fa7175507fd2dd870311f"
+    },
+    "ai-fit/reports/POSE_FIX.md": {
+      "bytes": 5173,
+      "sha256": "7eb6160234c396a2ac7482a307bb13219a365cafbcf350bef9802d068cede429"
+    },
+    "ai-fit/reports/PROCESSING_TIMELINE_2026-11-20.md": {
+      "bytes": 6641,
+      "sha256": "bff631640d5a4298de3fc56c8bac8dc8ac223d30651a6583ab45707d0004ae3d"
+    },
+    "ai-fit/reports/PROGRESS_2026-11-13.md": {
+      "bytes": 1872,
+      "sha256": "6dff9a238f6439aa97f12573a831284a705cd4ccf8def56bc6c4a1a9ba1fd28f"
+    },
+    "ai-fit/reports/QUALITY_REVIEW_2026-11-20.md": {
+      "bytes": 3003,
+      "sha256": "add33489ef64dbc8905a95e993d6329d8d2ec0901efe4f37d24bd250bbbabf91"
+    },
+    "ai-fit/reports/REMAINING_UPPER_WORK_2026-11-19.md": {
+      "bytes": 11778,
+      "sha256": "30fd0b6083ae5b80110f56f2237ab211caa9c7b0a5b19f72f8df8bf85eb95bce"
+    },
+    "ai-fit/reports/RESUME_2026-09-29.md": {
+      "bytes": 2881,
+      "sha256": "fcfc467352fb9f6f5f02bea97f7de7be68ea3b3e7782f85f681f3968ec3fefb1"
+    },
+    "ai-fit/reports/SPEED_OPTIMIZATION_2026-11-19.md": {
+      "bytes": 5231,
+      "sha256": "e76915b8f65cf792bd1ef693d4128c853355470971635f81234eb4e6003d00d5"
+    },
+    "ai-fit/reports/UI_POLISH.md": {
+      "bytes": 1791,
+      "sha256": "aa5cce1f72b12f42099ecc01b6b723091b8026944fbfa2ef06d0644311632586"
+    },
+    "ai-fit/reports/UPPER_AUDIT_PROGRESS_2026-11-19.md": {
+      "bytes": 4591,
+      "sha256": "b02ed04fd231aff08ea35682152d07ce4e9c8774469d66363232fc530deaf82f"
+    },
+    "ai-fit/reports/UPPER_REPAIRS_2026-11-19.md": {
+      "bytes": 6051,
+      "sha256": "a3153facd2062c805b603e2d72d45011e18c22ddba9ecf2fa346d1b7a6f68351"
+    },
+    "ai-fit/reports/VARIED_PHOTO_RELIABILITY_2026-11-18.md": {
+      "bytes": 2539,
+      "sha256": "4366624d207b20e64ad693e9267f15621dfe3363f210dec8b50cf178143bb49a"
+    },
+    "ai-fit/reports/WESTERN_POSE_FIX_2026-11-17.md": {
+      "bytes": 2934,
+      "sha256": "8881e92b6ffa7d3bce47b84cca3d899e7f49c130dd28b0a4af2eb528a404b897"
+    },
+    "ai-fit/reports/analytics-demo-desktop.png": {
+      "bytes": 276267,
+      "sha256": "e714768ab89ab5ffff79f19f686613e4862b0f9425208dab307a66b4d8408411"
+    },
+    "ai-fit/reports/analytics-demo-mobile.png": {
+      "bytes": 215555,
+      "sha256": "b978018af6fa9e46a73a34d275d0aa97f2f39fbbd02bea2f8bcfc3f0c2cdc781"
+    },
+    "ai-fit/reports/cleanup-2026-09-28.json": {
+      "bytes": 639,
+      "sha256": "87075d3830b6ae35a9d130f2d342477227c40a38e742b38ed9d4a2fefc0e5b39"
+    },
+    "ai-fit/reports/final-analytics-desktop.png": {
+      "bytes": 276240,
+      "sha256": "fa445d86b58100b1890edd56b6588c636c01b5ae47cb6e4860b41bd797fadb76"
+    },
+    "ai-fit/reports/final-analytics-mobile.png": {
+      "bytes": 215563,
+      "sha256": "8050b8d6591516591627bafd4ebcdb15a2bef7eb6af5afcbf4bb8659424e6b09"
+    },
+    "ai-fit/reports/final-preservation-and-gpu.json": {
+      "bytes": 1242,
+      "sha256": "7ad7aa231b81b4fb22ce4966991614596c329e1e29539ae535eb329415b4a827"
+    },
+    "ai-fit/reports/final-test-results.json": {
+      "bytes": 623,
+      "sha256": "07f97451a7d61563280fd83f4bb40962420cc2ded52204f3b0d388ffa6a69a4f"
+    },
+    "ai-fit/reports/final-ui-check.json": {
+      "bytes": 431,
+      "sha256": "230bf4e79e55d996ca694517e3d821507a9cb67e2e339234482b3bdf6dc82402"
+    },
+    "ai-fit/reports/module2-data-audit.json": {
+      "bytes": 5349,
+      "sha256": "046cb85c77c0147c337159fc4065101346107ec18622bc4cdd561aa8cc5f1b56"
+    },
+    "ai-fit/reports/module2-test-results.json": {
+      "bytes": 5853,
+      "sha256": "aa60217439c131bc31e29592fd0a6b30e02fd7cc3cc6df8d9f3b2d6c79ad32e4"
+    },
+    "ai-fit/reports/module2-ui-charts.png": {
+      "bytes": 159502,
+      "sha256": "bc434152bee55756bac641ae713cd25b6695a217a0fb52fe76aa1ab5c36edfe6"
+    },
+    "ai-fit/reports/module2-ui-check.json": {
+      "bytes": 151,
+      "sha256": "42b758694dcb69b772a59a0bb9653c6b1d9098f7314c322732ec2fb8f473b924"
+    },
+    "ai-fit/reports/module2-ui-lower.png": {
+      "bytes": 103395,
+      "sha256": "c1d95fdbf65b0408c8bd7bef0e310bd888a548682cc0852e500c41c507a20b48"
+    },
+    "ai-fit/reports/module2-ui-mobile.png": {
+      "bytes": 82528,
+      "sha256": "5c24f9d1dfad087fd96b075e55cf707215923c17666e0062872edb5d0cca5a7c"
+    },
+    "ai-fit/reports/module2-ui-overall.png": {
+      "bytes": 105898,
+      "sha256": "58b1f896e31cb07ae2d422f1c2613350e0d5eb832357e6a15b6f948562314b72"
+    },
+    "ai-fit/reports/module2-ui-upper.png": {
+      "bytes": 103804,
+      "sha256": "527ca221844aa5acadf3eb1364f174024807ea1c95f2e4158a1167aece8690ff"
+    },
+    "ai-fit/reports/outfit-fix-validation.json": {
+      "bytes": 1228,
+      "sha256": "4f90dd3d95937edd2cb5fa6fb638c340c4a6c80381d5d9926b03c14f10df120b"
+    },
+    "ai-fit/reports/pose-fix-validation.json": {
+      "bytes": 1171,
+      "sha256": "f29253ea9bf5eab2cce9093a25f63eb23d319b7f2cc2a758f75ceb0e3de52173"
+    },
+    "ai-fit/reports/resume-preservation.json": {
+      "bytes": 298,
+      "sha256": "986c71a9042e37ed297d12d7ff610e5bf96a8901f20713c829b63864c8ffcfa0"
+    },
+    "ai-fit/requirements-gpu-local.txt": {
+      "bytes": 542,
+      "sha256": "912d16296b10678c2522cb60dc02813722c50b96efd2fa4a037331fff9f9ebe4"
+    },
+    "ai-fit/requirements-module2-audit.txt": {
+      "bytes": 197,
+      "sha256": "73408a761816551f7cee3adc9bdc7a2528d9b0d9a6f73eaf2760a48dc12a8003"
+    },
+    "ai-fit/requirements.txt": {
+      "bytes": 137,
+      "sha256": "59763554988c4c33dfbaad5fcc0b70b8576ee9219196c96f535fb8fffd5dd4eb"
+    },
+    "ai-fit/scripts/audit_module2_data.py": {
+      "bytes": 2391,
+      "sha256": "c28fae708a0d459acd716dab08571343c10854274b0e2d63ea8ce2d760317e5b"
+    },
+    "ai-fit/scripts/audit_upper_tryon.py": {
+      "bytes": 19531,
+      "sha256": "30ce45edf4bae4975468a341679a84c311c554894c31675bb71d793859181027"
+    },
+    "ai-fit/scripts/download_cuda_wheel.py": {
+      "bytes": 2288,
+      "sha256": "e3ecdb2ec5f5cd8c010e8cf5060aa22d9f6744701620e3ce0b5370ea27642140"
+    },
+    "ai-fit/scripts/download_module2_data.py": {
+      "bytes": 1182,
+      "sha256": "2eea9417d5fd4a09647c196d2b9a61cbd18cc848b88ba9b70a188ef5a54a4f78"
+    },
+    "ai-fit/scripts/extract_pakistan_charts.py": {
+      "bytes": 4045,
+      "sha256": "57452b3b8902fae2b8ba97458b0a52c4d368a7ed2a4cb04545e5037c7f791a9d"
+    },
+    "ai-fit/scripts/fetch_package_report.py": {
+      "bytes": 2283,
+      "sha256": "0955fcc4d2d57b7343b73bfeef35318a257be939e2f8c9a4f232882acafa9c83"
+    },
+    "ai-fit/scripts/full_ui_server.py": {
+      "bytes": 1004,
+      "sha256": "1989d2c5d026f115c2502abca69c966561ee2b0de9f6e98ce105f598ef86762f"
+    },
+    "ai-fit/scripts/module2_ui_server.py": {
+      "bytes": 392,
+      "sha256": "7f072799ad023b162b011bfa5be80029d176aa2d9b341dcb738acf94e015919d"
+    },
+    "ai-fit/scripts/package_module2.py": {
+      "bytes": 2462,
+      "sha256": "6a63647723e0aa105bcbf190c4c5beace3c8d6d0e3b926ad2d714ef4631f5eb6"
+    },
+    "ai-fit/scripts/progress_ui_server.py": {
+      "bytes": 2938,
+      "sha256": "bd7a963c58e30468db8176cfa06db28a7ffb9b4d42cb5b4da6efa9f7bb78d59f"
+    },
+    "ai-fit/scripts/resolve_wheel_urls.py": {
+      "bytes": 1607,
+      "sha256": "c9ef1e165b3d452552ada69b6ec91c546505bab5273b8519abc970edfb0ef878"
+    },
+    "ai-fit/scripts/run_local.py": {
+      "bytes": 2807,
+      "sha256": "45459a97d60aada60f4c1a4f5e279170f5fb6640932e80dcd4eb94a6c847ad01"
+    },
+    "ai-fit/scripts/setup_local_models.py": {
+      "bytes": 3626,
+      "sha256": "509f735cc829d8f73be885992c40f1a6e63b9b619fb2ad70147ea52d19318259"
+    },
+    "ai-fit/scripts/test_audit_upper_tryon.py": {
+      "bytes": 6013,
+      "sha256": "2abf154029fa62046e7f1a3a8fcee84b3046aa5d7d856e6065b253e494c4d7ad"
+    },
+    "ai-fit/scripts/verify_module2.py": {
+      "bytes": 1405,
+      "sha256": "02497f5323d31810c1a32fc6c4fe16d08236d94a9be559021a62c3a6451b5969"
+    },
+    "ai-fit/sizing.py": {
+      "bytes": 9449,
+      "sha256": "a8a6f1a3dcd2fc61b4646da03a05ef380f192153a72fad67442366366ec3c6b8"
+    },
+    "ai-fit/start-gpu.ps1": {
+      "bytes": 3887,
+      "sha256": "ff9d5b8175c0e8911442f46475ed907b8062f91c937c4293bef739a385644fea"
+    },
+    "ai-fit/start.ps1": {
+      "bytes": 810,
+      "sha256": "14d1f19e8094920fc2c82065392ac664f6f938b6d19a19ad0e8b5df546d89dc2"
+    },
+    "ai-fit/static/app.js": {
+      "bytes": 52503,
+      "sha256": "5a5ceb3a544f8d235a7fb97a2a690638c06eb6000fdca7920f45acb8fdf18d10"
+    },
+    "ai-fit/static/fonts.css": {
+      "bytes": 92,
+      "sha256": "cb4e2eb9105bd494322c0ed23a2260f4e3144db92011b358190b5f86bec42ef2"
+    },
+    "ai-fit/static/style.css": {
+      "bytes": 19828,
+      "sha256": "d1787731de97fce83decb48da9dd56d4ee8d35a99ceedaf7781ef591ea7fb6e9"
+    },
+    "ai-fit/static/tryon-progress.js": {
+      "bytes": 3647,
+      "sha256": "45154cd4d1186a19cc31998097ad7679b2098ba563be41279f6e98790c59b518"
+    },
+    "ai-fit/storage.py": {
+      "bytes": 4033,
+      "sha256": "83300fb4e0ab46dfaf96621ca39527305c5d16cee815fb07313f45aeceff7e23"
+    },
+    "ai-fit/templates/index.html": {
+      "bytes": 608,
+      "sha256": "643ab89aafa56eec0df01c0b0805d227f6d6947b56be142e11caa616c8618af8"
+    },
+    "ai-fit/test_analytics.py": {
+      "bytes": 4053,
+      "sha256": "f34b4820f8913eb581969ed4f781f45ebb8cf4b374a03c9a462972fc23f26e43"
+    },
+    "ai-fit/test_app.py": {
+      "bytes": 18194,
+      "sha256": "7715ca37a451efa52db39eb47def25bc2dd7574309ace730f33f64ded9d5dfd9"
+    },
+    "ai-fit/test_catalog.cjs": {
+      "bytes": 1594,
+      "sha256": "7ba1e25efa8fc2d484900a7f262b21230a6d02192aa67269c5fd4d8ea0ff5c64"
+    },
+    "ai-fit/test_full_ui.cjs": {
+      "bytes": 9944,
+      "sha256": "67d6c4f081894b92a382048f8376d1bf67c68b491cb38ecbc27e89d1dea1b39a"
+    },
+    "ai-fit/test_generate.cjs": {
+      "bytes": 1160,
+      "sha256": "e6b085be4c8849ce09b1512311fd77892c2f157cb2fec80dacc86d46e034023f"
+    },
+    "ai-fit/test_module2_ui.cjs": {
+      "bytes": 4111,
+      "sha256": "10ea3b130049dd85793a19f2b5ef225b355ec2d7bba22fb2dfd9fe19ba5eeb9c"
+    },
+    "ai-fit/test_progress_browser.cjs": {
+      "bytes": 6783,
+      "sha256": "1ecb205797ded8a1ac3a32bb7e94f18a4dfb3099d6d725bc568f57433699de1b"
+    },
+    "ai-fit/test_progress_ui.cjs": {
+      "bytes": 973,
+      "sha256": "21e72b2bc17051ba21fcea23a53d9ffd036609fafa567e14ede868b839eb4705"
+    },
+    "ai-fit/test_sizing.py": {
+      "bytes": 13214,
+      "sha256": "31be33592b25f4605a8519b5a70c0eb5ac245538f1d47992c24e35be0b118b87"
+    },
+    "ai-fit/train_size.py": {
+      "bytes": 7973,
+      "sha256": "89cdce2f343354ebd6f6c846d2065210c39f5e8ade2b8e8491988201515c8b59"
+    },
+    "ai-tryon-ecosystem/README.md": {
+      "bytes": 5347,
+      "sha256": "b06923e5e228111eb370857f585df7496dce3e0389a8eba0dcd76354b09c5f86"
+    },
+    "ai_engine/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ai_engine/accessories/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ai_engine/accessories/accessory_processor.py": {
+      "bytes": 6799,
+      "sha256": "9db09a28baf2b9f08a644227f2d448a967f20f4604e5ac434a4e25d287ee26b9"
+    },
+    "ai_engine/clothes/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ai_engine/clothes/catvton_engine.py": {
+      "bytes": 10659,
+      "sha256": "dd2407562b9dc7c0433a7be5fdfe5a0a138182f8910a471e1580e797f585819a"
+    },
+    "ai_engine/clothes/mask_generator.py": {
+      "bytes": 9215,
+      "sha256": "1fed71ec3468e8df5ac7325ca2cc9c021ca1cf6656a0968322a30cb185597e41"
+    },
+    "ai_engine/clothes/tryon_processor.py": {
+      "bytes": 9863,
+      "sha256": "b9d1097149126a512a97547241a80c084d0f95d8352311d32465e850f81b91a3"
+    },
+    "ai_engine/makeup/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ai_engine/makeup/makeup_processor.py": {
+      "bytes": 6869,
+      "sha256": "44e21a1b8da26d5e346dfac06e3678f8f81c40dcd55de89bee737a9eb93850c4"
+    },
+    "ai_engine/size/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ai_engine/size/size_predictor.py": {
+      "bytes": 6943,
+      "sha256": "7ececee8e687895bbabddf7f977f64b4114b350083879b42464370cc415a79e5"
+    },
+    "ai_engine/size/train_model.py": {
+      "bytes": 6423,
+      "sha256": "7e96eabb803f68c5e61056fd933cf89fdc97a2cca7246761c8ea1189a57e34a5"
+    },
+    "analytics.py": {
+      "bytes": 4435,
+      "sha256": "b6a235ca26ad85a00050a7dd301012768bb4d79515a0276feb07aebd64971805"
+    },
+    "app.py": {
+      "bytes": 28357,
+      "sha256": "2fac83c105edbfd813ffe0724d426590ac1dee1c996436e2e5b35b61cd9d407c"
+    },
+    "backend/app.py": {
+      "bytes": 1854,
+      "sha256": "a826853b527d2bbe5d1762b5f79e7e70c230dbdf310b769b04d2454bff8a4a92"
+    },
+    "backend/config.py": {
+      "bytes": 1362,
+      "sha256": "0bee30fa4cba122168e5698684b2dca0ba4fe16dba45c33b73ca6d3bb504b1fb"
+    },
+    "backend/models/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "backend/models/database.py": {
+      "bytes": 5120,
+      "sha256": "4a2ed940dc105b1ba78be251541a7d45a6ab4bfdf2d3a9505526ea28284feb3a"
+    },
+    "backend/requirements.txt": {
+      "bytes": 1278,
+      "sha256": "aab9a780ac4a0207cbca44bf4a1ab0cd910d853d368b9261e752ee5c2e7784de"
+    },
+    "backend/routes/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "backend/routes/accessory_routes.py": {
+      "bytes": 2420,
+      "sha256": "a72d12f72a50a6d6b4670d8a5f1a374e3cc6ccb7cce3e38968cb18cc3dc2d4df"
+    },
+    "backend/routes/analytics_routes.py": {
+      "bytes": 4794,
+      "sha256": "62d8e4f42455e51449ed5578071d60f6660587587f53b48bc35a331189ce4604"
+    },
+    "backend/routes/auth_routes.py": {
+      "bytes": 2423,
+      "sha256": "fb58a18360e9bc220a5f7dca0d8c75e91c465fc85abf08ecd55da32ff1f2d2de"
+    },
+    "backend/routes/clothes_routes.py": {
+      "bytes": 2525,
+      "sha256": "eef6822129ec1b974cf25e72d8a6be5aaa3dac5b5880b66b05b1cb846962535b"
+    },
+    "backend/routes/inventory_routes.py": {
+      "bytes": 7587,
+      "sha256": "fd7781b53f1fc7935943022f9624f258dee538eb1de58c4253890b3cb416dd88"
+    },
+    "backend/routes/makeup_routes.py": {
+      "bytes": 3301,
+      "sha256": "43d41c8c16d1a804a227df296b45723e99d105476d332e1cf55d05230bc98712"
+    },
+    "backend/routes/size_routes.py": {
+      "bytes": 4153,
+      "sha256": "f1dbc7534373bf5fa7721678cefbca9304b973ca2cbbe4df03424ecda5e6ee2c"
+    },
+    "backend/routes/testimonial_routes.py": {
+      "bytes": 2946,
+      "sha256": "5229360f99f929b61113003ce0df564e1d41c0cdaef6fdb0f85a1942c6edd7a5"
+    },
+    "backend/utils/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "backend/utils/image_utils.py": {
+      "bytes": 4288,
+      "sha256": "296d127dd714b778a3034998b4874aefdb1f61ec6aaf7ad37f3220cef28e4c15"
+    },
+    "data/size_charts/ANSUR_II_FEMALE_Public.csv": {
+      "bytes": 976573,
+      "sha256": "ed7e800aa97a4d42f8286b988be2fe1883a2e789588169db959864b707d1757a"
+    },
+    "data/size_charts/ANSUR_II_MALE_Public.csv": {
+      "bytes": 2000794,
+      "sha256": "0547aea0170e5293de519389981135e75803f02e6d40c77ace740decc0caac64"
+    },
+    "data/store_inventory/demo_products.csv": {
+      "bytes": 1315,
+      "sha256": "506d014f862cce48d201f97ded0006e63988ecdb9af5cdb0d996501fe40e1a24"
+    },
+    "frontend/css/shared.css": {
+      "bytes": 11019,
+      "sha256": "6624c604705fbff12cf2f76d87a2f3e0990a5218a593d02ce0e63c8dca96b17c"
+    },
+    "frontend/index.html": {
+      "bytes": 22494,
+      "sha256": "04fefcdd510761140d705165244c3ec06fea9d3657bf6efca8b4ea1e34d81def"
+    },
+    "frontend/js/api.js": {
+      "bytes": 3439,
+      "sha256": "67337ea4396180e822492412589d8b51784249f094d8c3ef4d4a3135f7c5dc9e"
+    },
+    "frontend/pages/accessories.html": {
+      "bytes": 6163,
+      "sha256": "a36ab44b645ba02c898c7ee49c1a91451d31b7cf86796efcd79441bb8b9b5f15"
+    },
+    "frontend/pages/analytics.html": {
+      "bytes": 11081,
+      "sha256": "3d2749140b42bbe3a348d112b0190e2e3a174cac03e88840566e64fca7aa1f34"
+    },
+    "frontend/pages/auth.html": {
+      "bytes": 8729,
+      "sha256": "5b0bdb26c2c155f1eb68c7bcbc8a6368c85682f5bbd833408851850233a8b758"
+    },
+    "frontend/pages/clothes.html": {
+      "bytes": 5476,
+      "sha256": "ae5512a716dea039e9e5746602154f5db94a1382a313a254a3d9c944fd820ebb"
+    },
+    "frontend/pages/makeup.html": {
+      "bytes": 6669,
+      "sha256": "5062d4d1447165c0b16fc3ac80c742ae7dfc5218f2a4367cf1c08c1844f6183a"
+    },
+    "frontend/pages/size.html": {
+      "bytes": 11278,
+      "sha256": "95a373f28d305c6538b289bc7dec568f06ebc87c24f564b98811725254049681"
+    },
+    "requirements-module2-audit.txt": {
+      "bytes": 197,
+      "sha256": "73408a761816551f7cee3adc9bdc7a2528d9b0d9a6f73eaf2760a48dc12a8003"
+    },
+    "requirements.txt": {
+      "bytes": 145,
+      "sha256": "763e7b5dfb605c389f79508b6e3dbe665b8a421ccace87620072a269bc81b0f8"
+    },
+    "sizing.py": {
+      "bytes": 9449,
+      "sha256": "a8a6f1a3dcd2fc61b4646da03a05ef380f192153a72fad67442366366ec3c6b8"
+    },
+    "start-gpu.ps1": {
+      "bytes": 3908,
+      "sha256": "faa3720dc880ed98fca7f3042173b393872870f47f147c6b8e4a0b15cb13521f"
+    },
+    "start.ps1": {
+      "bytes": 810,
+      "sha256": "14d1f19e8094920fc2c82065392ac664f6f938b6d19a19ad0e8b5df546d89dc2"
+    },
+    "storage.py": {
+      "bytes": 3081,
+      "sha256": "0429271b45cd339f4382188d0081105f9e87020bffe09e070bbb85ce24aa5647"
+    },
+    "test_analytics.py": {
+      "bytes": 4053,
+      "sha256": "f34b4820f8913eb581969ed4f781f45ebb8cf4b374a03c9a462972fc23f26e43"
+    },
+    "test_app.py": {
+      "bytes": 14635,
+      "sha256": "3bfeb51bba1810842023895200477aedf541f154a7e2593caae37fb7e242c598"
+    },
+    "test_catalog.cjs": {
+      "bytes": 1594,
+      "sha256": "7ba1e25efa8fc2d484900a7f262b21230a6d02192aa67269c5fd4d8ea0ff5c64"
+    },
+    "test_full_ui.cjs": {
+      "bytes": 9398,
+      "sha256": "4bc1ebf33a47f93f59573104a9bdf54aa9dbd9f08e2520037371e9ab0ac6f6b3"
+    },
+    "test_generate.cjs": {
+      "bytes": 1160,
+      "sha256": "e6b085be4c8849ce09b1512311fd77892c2f157cb2fec80dacc86d46e034023f"
+    },
+    "test_module2_ui.cjs": {
+      "bytes": 4222,
+      "sha256": "8dedd98361ccca49e151861c2ba993e2779b9f8296d8293da46070fb2218b6b3"
+    },
+    "test_sizing.py": {
+      "bytes": 12983,
+      "sha256": "1d42ae053a4e0cae7d766458feb36157d818716eda68a380a3b09c10e38e833a"
+    },
+    "train_size.py": {
+      "bytes": 7973,
+      "sha256": "89cdce2f343354ebd6f6c846d2065210c39f5e8ade2b8e8491988201515c8b59"
+    }
+  },
+  "excluded": "Credentials, private runtime data, model weights and installed dependencies"
+}

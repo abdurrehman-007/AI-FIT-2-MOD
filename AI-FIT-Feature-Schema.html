@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI-FIT Database Schema</title>
+<style>
+:root { font-family: "Segoe UI", system-ui, sans-serif; color: #1e322e; background: #f5f8f6; }
+* { box-sizing: border-box; }
+body { max-width: 1160px; margin: 0 auto; padding: clamp(16px, 4vw, 48px); line-height: 1.55; }
+h1 { font-size: clamp(1.8rem, 5vw, 3rem); line-height: 1.15; margin: 0; letter-spacing: -.04em; }
+h2 { margin: 0; font-size: 1.35rem; }
+header p { color: #466058; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+nav a { color: #175c4b; background: white; border: 1px solid #d6e2dc; border-radius: 8px; padding: 6px 12px; }
+section { margin-bottom: 20px; padding: clamp(14px, 3vw, 26px); border: 1px solid #d6e2dc; border-radius: 12px; background: white; }
+.table-wrap { overflow-x: auto; margin-top: 14px; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 10px 12px; vertical-align: top; border-bottom: 1px solid #dce6e0; }
+thead th { background: #e9f3ed; }
+tbody th { font-weight: 600; }
+tbody tr:nth-child(even) { background: #f7faf8; }
+code { font: .9em Consolas, monospace; color: #164e40; background: #eef5f0; border-radius: 3px; padding: .1em .25em; overflow-wrap: anywhere; }
+ul { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,250px),1fr)); gap: 8px 24px; padding-left: 20px; }
+@media print { body { padding: 0; background: white; } nav { display: none; } tr { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<header><h1>AI-FIT Database Schema</h1><p>Local setup uses <strong>SQLite</strong> and local sign-in. Firebase is inactive.</p></header>
+<nav aria-label="Schema sections"><a href="#collections">Collections</a><a href="#event-fields">Event fields</a><a href="#size-chart-fields">Size chart fields</a><a href="#relationships">Relationships</a></nav>
+<main><section id="collections"><h2>Collections</h2>
+<p>SQLite stores records in <code>documents(collection TEXT, id TEXT, body TEXT NOT NULL)</code>. The primary key is <code>(collection, id)</code>. The fields below are stored inside the JSON <code>body</code>. When Firestore is enabled, the same records are stored as collections and documents.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Feature</th><th scope="col">Collection / document key</th><th scope="col">Fields and types</th></tr></thead><tbody>
+<tr><th scope="row">Accounts</th><td><code>users/{uid}</code></td><td><code>id</code>, <code>email</code>, <code>name</code> (string), <code>store</code> (store ID or null). Local accounts also have <code>password</code> (hash string) and optional <code>password_version</code> (string). Firebase Auth manages its own credentials.</td></tr>
+<tr><th scope="row">Stores and settings</th><td><code>stores/{storeId}</code></td><td><code>id</code>, <code>name</code>, <code>chart_status</code> (string), <code>owner</code> (user ID or null for the demo), <code>chart</code> (legacy cm map), <code>charts</code> (category map in inches), <code>baseline_orders</code>, <code>baseline_returns</code> (integer).</td></tr>
+<tr><th scope="row">Catalog and inventory</th><td><code>products/{productId}</code></td><td><code>id</code>, <code>store</code>, <code>sku</code>, <code>name</code>, <code>category</code>, <code>color</code>, <code>image</code> (string), <code>price</code> (number in PKR), <code>stock</code> (integer), <code>sizes</code> (string array), <code>sample</code>, <code>active</code> (boolean). <code>image</code> is an image ID or empty string.</td></tr>
+<tr><th scope="row">Uploads and generated previews</th><td><code>images/{imageId}</code></td><td><code>id</code>, <code>kind</code> (person, garment, or result), <code>owner</code> (user ID), <code>created</code> (Unix seconds). Image bytes live in the server&#x27;s <code>instance/images</code> directory by default, including when metadata uses Firestore.</td></tr>
+<tr><th scope="row">Try-on, sizing and retail analytics</th><td><code>events/{eventId}</code></td><td><code>id</code>, <code>kind</code>, <code>store</code> (string), <code>time</code> (Unix seconds). Fields vary by event type, as shown below.</td></tr>
+<tr><th scope="row">Local sign-in throttling</th><td><code>limits/{uid}</code></td><td><code>id</code> (string), <code>attempts</code> (integer), <code>until</code> (Unix seconds).</td></tr>
+<tr><th scope="row">Local reset-email throttling</th><td><code>reset_limits/{uid}</code></td><td><code>minute</code> (integer, Unix minutes).</td></tr>
+<tr><th scope="row">QR and kiosk</th><td>Uses the existing store and account records</td><td>QR payload is generated from the store ID and configured public URL. No separate QR or kiosk collection.</td></tr>
+</tbody></table></div>
+</section>
+<section id="event-fields"><h2>Event fields</h2>
+<div class="table-wrap"><table><thead><tr><th scope="col"><code>kind</code></th><th scope="col">Additional fields</th></tr></thead><tbody>
+<tr><th scope="row"><code>tryon</code></th><td><code>product</code> (product ID), <code>category</code> (string), <code>seconds</code> (number), <code>result</code> (image ID), optional <code>customer_key</code> (pseudonymous string).</td></tr>
+<tr><th scope="row"><code>tryon_failed</code></th><td><code>product</code> (product ID), <code>seconds</code> (number).</td></tr>
+<tr><th scope="row"><code>size</code></th><td><code>product</code> (product ID), <code>category</code>, <code>size</code>, <code>segment</code> (string). Raw shopper measurements are not stored.</td></tr>
+<tr><th scope="row"><code>sale</code>, <code>return</code></th><td><code>reference</code> (order reference), <code>tryon</code> (try-on event ID or empty string).</td></tr>
+</tbody></table></div>
+</section>
+<section id="size-chart-fields"><h2>Size chart fields</h2>
+<p>Path: <code>stores/{storeId}.charts.{category}.{size}</code>. Sizes are XS, S, M, L, XL and XXL. All chart values are numeric body measurements in inches.</p>
+<div class="table-wrap"><table><thead><tr><th scope="col">Category</th><th scope="col">Required fields</th><th scope="col">Optional fields</th></tr></thead><tbody>
+<tr><th scope="row"><code>upper</code></th><td><code>chest</code>, <code>waist</code></td><td><code>shoulder</code>, <code>sleeve</code></td></tr>
+<tr><th scope="row"><code>lower</code></th><td><code>waist</code>, <code>hips</code></td><td><code>inseam</code>, <code>thigh</code></td></tr>
+<tr><th scope="row"><code>overall</code></th><td><code>chest</code>, <code>waist</code>, <code>hips</code></td><td><code>shoulder</code>, <code>sleeve</code>, <code>inseam</code>, <code>thigh</code></td></tr>
+</tbody></table></div>
+</section>
+<section id="relationships"><h2>Relationships</h2>
+<ul><li><code>users.store → stores.id</code></li><li><code>stores.owner → users.id</code></li><li><code>products.store → stores.id</code></li><li><code>products.image → images.id</code></li><li><code>images.owner → users.id</code></li><li><code>events.store → stores.id</code></li><li><code>events.product → products.id</code></li><li><code>events.result → images.id</code></li><li><code>events.tryon → events.id</code></li></ul>
+</section></main>
+</body>
+</html>

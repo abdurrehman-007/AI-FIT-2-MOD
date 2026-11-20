@@ -1,0 +1,18 @@
+{
+  "reviewed": "2026-09-29",
+  "production_training": "not performed; no suitable cohort established",
+  "sources": [
+    {
+      "name": "FIT",
+      "url": "https://johannakarras.github.io/FIT/",
+      "finding": "Synthetic 3D garments and physics simulations with retextured images; not independent physical fitting labels.",
+      "decision": "Not used to claim real fitting accuracy."
+    },
+    {
+      "name": "tops-fit-dataset",
+      "url": "https://huggingface.co/datasets/ypolatog/tops-fit-dataset",
+      "finding": "30 original garments judged by one wearer; 347 augmented rows. Garment flat measurements, no wearer body measurements.",
+      "decision": "No participant-disjoint body-measurement XS-XXL cohorts; not integrated."
+    }
+  ]
+}

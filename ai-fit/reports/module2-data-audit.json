@@ -1,0 +1,198 @@
+{
+  "python": "3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.4.6",
+    "scikit-learn": "1.7.1",
+    "joblib": "1.5.1",
+    "openpyxl": "3.1.5"
+  },
+  "school_workbook": [
+    {
+      "sheet": "pre-and-post-post data",
+      "rows": 1200,
+      "columns": [
+        "ID",
+        "Group",
+        "Residence",
+        "Gender",
+        "Religion",
+        "Age",
+        "agemean",
+        "Age_status",
+        "Grade",
+        "Weight_Kg",
+        "Height_M",
+        "BMI",
+        "Income",
+        "Obesity_Scale",
+        "Q1_Fastfood",
+        "Q2_PhysicalActvity",
+        "Q3_ScreenTiming",
+        "Q4_Sleep",
+        "Q1",
+        "Q2",
+        "Q3",
+        "Q1_1",
+        "Q1_2",
+        "Q1_3",
+        "Q2_1",
+        "Q2_2",
+        "OverweightObesity",
+        "agepost",
+        "postweight",
+        "posthight",
+        "bmipost",
+        "obesitypost",
+        "fastfoodpost",
+        "PApost",
+        "screenpost",
+        "sleeppost",
+        "ecouragepost",
+        "familytogatherpost",
+        "foundpost",
+        "schoolfacilitespost",
+        "equpementpost",
+        "vanuepost",
+        "commuinitypost",
+        "communitysupportpost",
+        "owobesitypost",
+        "pre_data",
+        "post_data"
+      ],
+      "unique_IDs": 1200,
+      "duplicate_ID_rows": 0,
+      "exact_duplicate_rows": 0,
+      "missing_counts": {
+        "ID": 0,
+        "Group": 0,
+        "Residence": 0,
+        "Gender": 0,
+        "Religion": 0,
+        "Age": 0,
+        "agemean": 0,
+        "Age_status": 0,
+        "Grade": 0,
+        "Weight_Kg": 0,
+        "Height_M": 0,
+        "BMI": 0,
+        "Income": 0,
+        "Obesity_Scale": 0,
+        "Q1_Fastfood": 0,
+        "Q2_PhysicalActvity": 0,
+        "Q3_ScreenTiming": 0,
+        "Q4_Sleep": 0,
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 0,
+        "Q1_1": 0,
+        "Q1_2": 0,
+        "Q1_3": 0,
+        "Q2_1": 0,
+        "Q2_2": 0,
+        "OverweightObesity": 0,
+        "agepost": 0,
+        "postweight": 0,
+        "posthight": 0,
+        "bmipost": 0,
+        "obesitypost": 0,
+        "fastfoodpost": 0,
+        "PApost": 0,
+        "screenpost": 0,
+        "sleeppost": 0,
+        "ecouragepost": 0,
+        "familytogatherpost": 0,
+        "foundpost": 0,
+        "schoolfacilitespost": 0,
+        "equpementpost": 0,
+        "vanuepost": 0,
+        "commuinitypost": 0,
+        "communitysupportpost": 0,
+        "owobesitypost": 0,
+        "pre_data": 0,
+        "post_data": 0
+      },
+      "numeric_ranges": {
+        "Age": {
+          "min": 1,
+          "max": 9,
+          "count": 1200
+        },
+        "agemean": {
+          "min": 9,
+          "max": 17,
+          "count": 1200
+        },
+        "Weight_Kg": {
+          "min": 17.7,
+          "max": 109.3,
+          "count": 1200
+        },
+        "Height_M": {
+          "min": 1.14,
+          "max": 1.84,
+          "count": 1200
+        },
+        "postweight": {
+          "min": 17.7,
+          "max": 109.3,
+          "count": 1200
+        },
+        "posthight": {
+          "min": 1.14,
+          "max": 1.84,
+          "count": 1200
+        }
+      }
+    }
+  ],
+  "national_anthropometry": {
+    "indicator_rows": 65,
+    "surveys": [
+      "PK1991DHS",
+      "PK2012DHS",
+      "PK2017DHS"
+    ],
+    "indicators": [
+      "Children overweight",
+      "Children overweight for their age",
+      "Children severely stunted",
+      "Children severely underweight",
+      "Children severely wasted",
+      "Children stunted",
+      "Children underweight",
+      "Children wasted",
+      "Mean Body Mass Index (BMI) for women",
+      "Mean height for age of children",
+      "Mean weight for age of children",
+      "Mean weight for height of children",
+      "Number of children under age five",
+      "Number of children under age five (unweighted)",
+      "Number of women",
+      "Number of women (unweighted)",
+      "Women who are mildly thin according to BMI (17.0-18.4)",
+      "Women who are moderately thin according to BMI (<17.0)",
+      "Women who are obese according to BMI (>=30.0)",
+      "Women who are overweight according to BMI (25.0-29.9)",
+      "Women who are overweight or obese according to BMI (>=25.0)",
+      "Women who are thin according to BMI (<18.5)",
+      "Women with height below 145 cm",
+      "Women with normal BMI (18.5-24.9)"
+    ],
+    "unit_of_observation": "aggregate survey indicator, not individual fitting"
+  },
+  "fitting_labels": 0,
+  "training_performed": false,
+  "external_test_accuracy": null,
+  "confidence_calibration": null,
+  "reason": "Neither delivered source contains category-specific independently confirmed garment size/fit labels or the required adult shopper measurements. No chart-derived or synthetic labels generated.",
+  "files": {
+    "national-anthropometry.csv": {
+      "bytes": 11202,
+      "sha256": "b6a5869098337f1d79388f73f4254b125ada0917436d1afeeb4c93b429f2811a"
+    },
+    "pone.0317534.s001.xlsx": {
+      "bytes": 264013,
+      "sha256": "27296591c4e0d792bee4a111f3ceb7a587c2af47e8575a7b1c729ce6901f817d"
+    }
+  }
+}

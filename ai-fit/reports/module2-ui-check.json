@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "categories": [
+    "upper",
+    "lower"
+  ],
+  "mobile_width": 390,
+  "chart_edit_persisted": true,
+  "browser_errors": []
+}

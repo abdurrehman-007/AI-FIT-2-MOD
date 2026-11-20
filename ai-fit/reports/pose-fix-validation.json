@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-23",
+  "implementation": "MediaPipe landmark-protected inpainting, full-resolution restoration, donor garment extraction and output pose verification; no trained pose adapter",
+  "python_tests": {
+    "application_sizing_analytics": 50,
+    "gpu_preprocessing": 33,
+    "total": 83,
+    "status": "passed"
+  },
+  "generation_js": "passed",
+  "real_gpu_cases": [
+    {
+      "case": "crossed-arms-brown",
+      "status": 200,
+      "seconds": 17.68
+    },
+    {
+      "case": "raised-arm-blue",
+      "status": 200,
+      "seconds": 18.25
+    },
+    {
+      "case": "upper-blue",
+      "status": 200,
+      "seconds": 17.18
+    },
+    {
+      "case": "pink-brown",
+      "status": 200,
+      "seconds": 15.75
+    },
+    {
+      "case": "pink-blue",
+      "status": 200,
+      "seconds": 15.37
+    }
+  ],
+  "limitations": [
+    "Garment colour/details can differ; visible pink trousers remain in exact-case outputs.",
+    "Small or occluded poses may be uncheckable; geometric bounds are not calibrated guarantees."
+  ],
+  "private_evidence_excluded_from_zip": true,
+  "model_backend_source_unchanged": true
+}

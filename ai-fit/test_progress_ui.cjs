@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict');
+const {view,markup}=require('./static/tryon-progress.js');
+const base={status:'running',stage:'generating',percent:60,elapsed_seconds:20,remaining_seconds:10,estimated_total_seconds:30,observed:0,garment:'<script>unsafe</script>'};
+assert.equal(view(base,5000).elapsed,25);assert.equal(view(base,5000).remaining,5);
+assert.equal(view({...base,percent:100},1000).percent,99);
+assert.equal(view({...base,status:'failed'},1000).percent,60);
+assert.equal(view({...base,status:'complete'},1000).percent,100);
+const late=view(base,20000);assert.equal(late.percent,60);assert.equal(late.eta,'Updating estimate…');
+assert.equal(late.overdue,true);assert.equal(view({...base,remaining_seconds:null},0).eta,'Calculating estimate…');
+assert.ok(markup(base,0).includes('&lt;script&gt;'));assert.ok(!markup(base,0).includes('<script>'));
+console.log('Progress display: elapsed, ETA, delayed/failed/complete states and escaping passed.');
